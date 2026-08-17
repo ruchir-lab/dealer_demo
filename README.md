@@ -99,6 +99,10 @@ precomputed.
 Runs on the GCP box `gcpcai` (`predictnow-ai-cai-2026`, project `cai-api-504114`) under
 systemd as `dealer-demo.service`, uvicorn on port **8090** with 2 workers.
 
+> Note on names: the git repo is `ruchir-lab/dealer_demo`, but the checkout on the box
+> lives at `~/dealer_presentation` (and that is the directory name the deploy commands
+> below assume). Clone to whatever you like locally — only the box path is fixed.
+
 ```bash
 sudo systemctl status dealer-demo
 sudo systemctl restart dealer-demo
